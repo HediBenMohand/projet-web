@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+
+            <!-- Article List -->
+
+            <div class="col-sm-12 col-md-8">
+
+                <!-- H1 Article -->
+                <a class="main-article-link" href="#">
+                    <div class="main-article mb-5 pb-3">
+                        <img src="{{ asset('images/mario.jpg') }}" alt="meteor shower">
+                        <h1 class="text-center mt-2"> Retrouvez nos promos <br>Spaceiale!</h1>
+                    </div>
+                </a>
+
+                <!-- Supporting Articles -->
+
+                <div class="article-container my-1">
+                    <a href="{{ path('article_show', {slug: 'why-asteroids-taste-like-bacon'}) }}">
+                        <img class="article-img" src="{{ asset('images/mhw.jpg') }}">
+                        <div class="article-title d-inline-block pl-3 align-middle">
+                            <span> Monster Hunter World </span>
+                            <br>
+                            <span class="align-left article-details"><img class="article-author-img rounded-circle" src="{{ asset('images/capcom.png') }}"> Capcom </span>
+                            <span class="pl-5 article-details float-right"> 18/20 </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="article-container my-1">
+                    <a href="#">
+                        <img class="article-img"  src="{{ asset('images/acorigins.jpg') }}">
+                        <div class="article-title d-inline-block pl-3 align-middle">
+                            <span> Assassin's Creed Origins </span>
+                            <br>
+                            <span class="align-left article-details"><img class="article-author-img rounded-circle" src="{{ asset('images/ubisoft.jpg') }}"> Ubisoft </span>
+                            <span class="pl-5 article-details float-right"> 18/20 </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="article-container my-1">
+                    <a href="#">
+                        <img class="article-img" src="{{ asset('images/tw.jpg') }}">
+                        <div class="article-title d-inline-block pl-3 align-middle">
+                            <span> The Witcher 3 Wild Hunt </span>
+                            <br>
+                            <span class="align-left article-details"><img class="article-author-img rounded-circle" src="{{ asset('images/namco.png') }}"> Bandai Namco </span>
+                            <span class="pl-5 article-details float-right"> 19/20 </span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Right bar ad space -->
+
+
+            <div class="col-sm-12 col-md-4 text-center">
+                <div class="ad-space mx-auto mt-1 pb-2 pt-2">
+                    <img class="advertisement-img" src="{{ asset('images/space-ice.png') }}">
+                    <p><span class="advertisement-text">New:</span> Space Ice Cream!</p>
+                    <button class="btn btn-info">Buy Now!</button>
+                </div>
+
+                <div class="quote-space pb-2 pt-2 px-5">
+                    <h3 class="text-center pb-3">Articles qui pourrais vous plaire</h3>
+                    <p><i class="fa fa-comment"></i>L'équilibre parfait est-il possible dans un jeu compétitif ?<br>— <a href="http://www.jeuxvideo.com/news/1229572/l-equilibre-parfait-est-il-possible-dans-un-jeu-competitif.htm">La reponse ici</a></p>
+
+                    <p class="pt-4"><i class="fa fa-comment"></i> Avance Rapide : Gran Turismo 7 : Le retour du Roi ? <br>— <a href="http://www.jeuxvideo.com/videos/chroniques/1234773/avance-rapide-gran-turismo-7-le-retour-du-roi.htm">Chronique</a></p>
+
+                    <p class="pt-4"><i class="fa fa-comment"></i>PS5 : sortie, prix, jeux, puissance, manette, design. Tout ce qu’il faut savoir sur la nouvelle console de Sony<br>— <a href="http://www.jeuxvideo.com/dossier/1235027/ps5-sortie-prix-jeux-puissance-manette-design-tout-ce-qu-il-faut-savoir-sur-la-nouvelle-console-de-sony/">PlayStation 5</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
